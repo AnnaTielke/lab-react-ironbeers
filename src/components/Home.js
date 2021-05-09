@@ -9,7 +9,7 @@ class Home extends Component {
     return (
       <div>
         <div className="card mb-3">
-          <img src={beers} class="card-img-top" alt="..." />
+          <img src={beers} className="card-img-top" alt="..." />
           <div className="card-body">
             <Link to={`/beers`}>
               <h1 className="card-title">All Beers</h1>
@@ -23,7 +23,7 @@ class Home extends Component {
         </div>
 
         <div className="card mb-3">
-          <img src={randombeer} class="card-img-top" alt="..." />
+          <img src={randombeer} className="card-img-top" alt="..." />
           <div className="card-body">
             <Link to={`/random-beer`}>
               <h1 className="card-title">Random Beer</h1>
@@ -37,7 +37,7 @@ class Home extends Component {
         </div>
 
         <div className="card mb-3">
-          <img src={newbeer} class="card-img-top" alt="..." />
+          <img src={newbeer} className="card-img-top" alt="..." />
           <div className="card-body">
             <Link to={`/new-beer`}>
               <h1 className="card-title">New Beer</h1>
