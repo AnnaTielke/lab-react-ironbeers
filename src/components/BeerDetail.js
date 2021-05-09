@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import Header from './Header';
 
 class BeerDetail extends Component {
   state = {
@@ -8,8 +9,8 @@ class BeerDetail extends Component {
 
   componentDidMount() {
     let beerId = this.props.match.params.id;
-    console.log('HEEERREEE');
-    console.log(this.props);
+    //  console.log('HEEERREEE');
+    // console.log(this.props);
     axios
       .get(`https://ih-beers-api2.herokuapp.com/beers/${beerId}`)
       .then((response) => {
@@ -21,8 +22,8 @@ class BeerDetail extends Component {
   }
 
   render() {
-    console.log('look at the state');
-    console.log(this.state.beer);
+    // console.log('look at the state');
+    // console.log(this.state.beer);
     const {
       image_url,
       name,
@@ -34,6 +35,7 @@ class BeerDetail extends Component {
     } = this.state.beer;
     return (
       <div>
+        <Header />
         <div className="card" style={{ width: '18rem' }}>
           <img src={image_url} className="card-img-top" alt="..." />
           <div className="card-body">

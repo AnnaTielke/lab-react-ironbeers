@@ -5,6 +5,7 @@ import Home from './components/Home';
 import BeerDetail from './components/BeerDetail';
 
 import axios from 'axios';
+import RandomBeer from './components/RandomBeer';
 
 class App extends Component {
   state = {
@@ -36,6 +37,7 @@ class App extends Component {
             }}
           />
           <Route path="/beers/:id" component={BeerDetail} />
+          <Route path="/random-beer" component={RandomBeer} />
         </Switch>
       </div>
     );
