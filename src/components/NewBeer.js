@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import { Button } from 'react-bootstrap';
+import Header from './Header';
 
 class NewBeer extends Component {
   render() {
     const { onAdd } = this.props;
     return (
       <div>
+        <Header />
         <form onSubmit={onAdd}>
           <input name="name" type="text" placeholder="Enter name" />
           <input name="tagline" type="text" placeholder="Enter tagline" />
